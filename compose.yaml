@@ -22,8 +22,7 @@ services:
         condition: service_healthy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.planka.rule=HostRegexp(`${PLANKA_URL}`)"
-      - "traefik.http.routers.planka.tls=true"
+      - "traefik.http.routers.planka.rule=Host(`${PLANKA_URL}`)"
 
   postgres:
     image: postgres:16-alpine
