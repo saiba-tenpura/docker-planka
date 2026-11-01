@@ -19,3 +19,6 @@ docker compose run --rm planka npm run db:create-admin-user
 ```
 
 For additional information refer to the [official documentation](https://docs.planka.cloud).
+
+## License
+[MIT](./LICENSE)
